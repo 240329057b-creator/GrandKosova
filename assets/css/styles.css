@@ -1,0 +1,407 @@
+/* --------------------- BASE --------------------- */
+:root {
+    --gk-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --gk-fast: 180ms;
+    --gk-normal: 300ms;
+    --gk-gold: #d4af37;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #d7bc64;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    background: rgba(212, 175, 55, 0.3);
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    color: #2c2c2c;
+}
+
+/* --------------------- BUTTONS --------------------- */
+.btn-gold {
+    background-color: #bfa160;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.6rem 1.8rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #a78f44;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* --------------------- NAVBAR --------------------- */
+
+/* --------------------- HERO --------------------- */
+.hero {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+/* --------------------- SECTIONS --------------------- */
+section {
+    padding: 0px 0;
+}
+
+/* --------------------- CARDS --------------------- */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #2c2c2c;
+}
+
+/* --------------------- GALLERY --------------------- */
+.gallery img {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* --------------------- FOOTER --------------------- */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #bfa160;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------- FORM --------------------- */
+input, textarea {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 0.7rem;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #bfa160;
+    outline: none;
+}
+
+/* --------------------- RESPONSIVE --------------------- */
+@media (max-width: 768px){
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+
+    .logo-img{
+    height:45px;
+    width:auto;
+}
+
+.logo-text{
+    font-size:18px;
+    font-weight:600;
+    color:#d4af37;
+    letter-spacing:1px;
+    white-space:nowrap;
+}
+
+}
+
+body.home-page {
+
+    background-color: #2d83d9;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+/* Seksioni para footer */
+.cta-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    background: transparent !important;
+}
+
+/* Hiq margin nga elementi i fundit brenda seksionit */
+.cta-section *:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Footer */
+footer {
+    margin-top: 0 !important;
+    background: #000;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+
+/* CSS qe e ke tash */
+body {
+   background:black;
+}
+
+/* kodet tjera ... */
+
+
+/* --------------------- GK NAVBAR SHARED --------------------- */
+.gk-navbar {
+    background: #000 !important;
+    border-bottom: 2px solid #d4af37;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    padding: 0.5rem 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.gk-navbar .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.gk-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin-right: auto;
+    min-width: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.gk-navbar .navbar-brand img {
+    height: 52px;
+    width: auto;
+    margin-right: 25px;
+}
+
+.gk-navbar .navbar-brand h3 {
+    margin: 0;
+    color: #d4af37;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    white-space: nowrap;
+}
+
+.gk-navbar .navbar-toggler {
+    margin-left: auto;
+    border: 1px solid #d4af37;
+    padding: 0.45rem 0.65rem;
+}
+
+.gk-navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.gk-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23d4af37' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.5em;
+    height: 1.5em;
+    background-color: transparent;
+}
+
+.gk-navbar .navbar-toggler-icon::before,
+.gk-navbar .navbar-toggler-icon::after {
+    content: none;
+}
+
+.gk-navbar .navbar-nav .nav-link {
+    color: #d4af37 !important;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-left: 0 !important;
+}
+
+.gk-navbar .navbar-nav {
+    align-items: center;
+}
+
+.gk-navbar .navbar-nav .nav-link:hover,
+.gk-navbar .navbar-nav .nav-link.active,
+.gk-navbar .navbar-nav .show > .nav-link {
+    color: #fff !important;
+}
+
+/* --------------------- PREMIUM MICRO-INTERACTIONS --------------------- */
+.btn-gold,
+.btn-outline-gold,
+.btn-gold-small {
+    transition: transform var(--gk-fast) var(--gk-ease),
+        box-shadow var(--gk-normal) var(--gk-ease),
+        background-color var(--gk-normal) var(--gk-ease),
+        color var(--gk-normal) var(--gk-ease),
+        border-color var(--gk-normal) var(--gk-ease);
+}
+
+.btn-gold:focus-visible,
+.btn-outline-gold:focus-visible,
+.btn-gold-small:focus-visible,
+.gk-navbar .navbar-toggler:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--gk-gold);
+    outline-offset: 2px;
+}
+
+.btn-gold:hover,
+.btn-outline-gold:hover,
+.btn-gold-small:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+}
+
+.gk-navbar .navbar-brand img {
+    transition: transform var(--gk-normal) var(--gk-ease);
+}
+
+.gk-navbar .navbar-brand:hover img {
+    transform: scale(1.04);
+}
+
+.gk-navbar .navbar-nav .nav-link {
+    transition: color var(--gk-fast) var(--gk-ease), opacity var(--gk-fast) var(--gk-ease);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Accessibility + smoother low-end performance */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* --------------------- SEAMLESS SECTION FLOW --------------------- */
+section {
+    position: relative;
+    overflow: clip;
+}
+
+/* Keep adjacent sections visually merged */
+section + section {
+    margin-top: -1px;
+}
+
+/* Soft blend from previous section into current */
+section + section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Soft blend from current section into next */
+section::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.16));
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Keep section content above transition layers */
+section > .container,
+section > .container-fluid,
+section > div {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 991px) {
+    .gk-navbar {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: 0;
+    }
+
+    .gk-navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .gk-navbar .navbar-brand h3 {
+        font-size: 1rem;
+    }
+
+    .gk-navbar .navbar-brand img {
+        height: 44px;
+    }
+
+    .gk-navbar .navbar-collapse {
+        flex-basis: 100%;
+        margin-top: 0.65rem;
+        background: #000;
+        border: 1px solid rgba(212, 175, 55, 0.35);
+        border-radius: 10px;
+        padding: 0.65rem 0.8rem;
+    }
+
+    section + section::before,
+    section::after {
+        height: 34px;
+    }
+}
+

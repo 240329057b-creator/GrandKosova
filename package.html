@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Kosova Restaurant | Menu</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark gk-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="Hotel Grand Kosova" />
+          <h3>Restaurant Grand Kosova</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="package.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Rreth Nesh</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Kontakti</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="navbar-separator"></div>
+
+    <!-- ========== PACKAGES HERO ========== -->
+    <section class="packages-hero">
+      <div class="packages-hero-overlay"></div>
+      <div class="container packages-hero-content" data-aos="fade-up">
+        <p class="badge-text">Menu & Paketa</p>
+        <h1>Paketa dasmash për çdo vizion</h1>
+        <p class="subtitle">
+          Zgjidhni mes paketave tona të kuruara me kujdes – nga menutë klasike deri te ato luksoze,
+          me mundësi shtesë sipas dëshirës suaj.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PACKAGES LIST ========== -->
+    <section class="packages-section">
+      <div class="container">
+        <div class="packages-grid">
+          
+          <article class="package-card" data-aos="fade-up">
+            <div class="package-img">
+              <img src="assets/images/menu.jpg" alt="Menu 1" />
+            </div>
+            <div class="package-content">
+              <h3>Menu 1</h3>
+              <p class="package-price">nga <span>22€ / person</span></p>
+              <p class="package-tagline">Zgjedhje elegante për dasma të mesme dhe intime.</p>
+              <button
+                class="btn-outline-gold w-100 mb-3"
+                type="button"
+                onclick="toggleMenu('menuSilver1')"
+              >
+                Shiko Menun
+              </button>
+              <div id="menuSilver1" class="package-menu">
+                <ul>
+                  <li>Parapërgatitje: Sallatë mix sezoni</li>
+                  <li>Menu Kryesore: Mish viçi ose peshk i freskët</li>
+                  <li>Garniturë: Perime të pjekura & patate në furrë</li>
+                  <li>Ëmbëlsirë: Tortë klasike dasme</li>
+                  <li>Pije: Ujë, lëngje të ndryshme, verë e shtëpisë</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn-gold reserve-btn">Rezervo</a>
+            </div>
+          </article>
+
+          <article class="package-card highlight" data-aos="fade-up" data-aos-delay="100">
+            <div class="package-badge">Më e kërkuara</div>
+            <div class="package-img">
+              <img src="assets/images/menu.jpg" alt="Menu 2" />
+            </div>
+            <div class="package-content">
+              <h3>Menu 2</h3>
+              <p class="package-price">nga <span>26€ / person</span></p>
+              <p class="package-tagline">Balancë perfekte mes elegancës dhe bujarisë.</p>
+              <button
+                class="btn-outline-gold w-100 mb-3"
+                type="button"
+                onclick="toggleMenu('menuGold')"
+              >
+                Shiko Menun
+              </button>
+              <div id="menuGold" class="package-menu">
+                <ul>
+                  <li>Parapërgatitje: Sallatë mix + antipasto të përzgjedhur</li>
+                  <li>
+                    Menu Kryesore: Mish viçi ose peshk premium + sallatë speciale e shtëpisë
+                  </li>
+                  <li>Ëmbëlsirë: Tortë luksoze + fruta të freskëta</li>
+                  <li>Pije: Ujë, lëng, verë, pije freskuese</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn-gold reserve-btn">Rezervo</a>
+            </div>
+          </article>
+
+          <article class="package-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="package-img">
+              <img src="assets/images/menu.jpg" alt="Menu 3" />
+            </div>
+            <div class="package-content">
+              <h3>Menu 3</h3>
+              <p class="package-price">nga <span>30€ / person</span></p>
+              <p class="package-tagline">Për mbrëmje totalisht luksoze dhe të paharrueshme.</p>
+              <button
+                class="btn-outline-gold w-100 mb-3"
+                type="button"
+                onclick="toggleMenu('menuRoyal')"
+              >
+                Shiko Menun
+              </button>
+              <div id="menuRoyal" class="package-menu">
+                <ul>
+                  <li>Parapërgatitje: Sallatë mix + antipasto + supë speciale</li>
+                  <li>Menu Kryesore: Mish viçi ose peshk i freskët + garniturë luksoze</li>
+                  <li>Ëmbëlsirë: Tortë speciale dasme + dessert shtesë + fruta</li>
+                  <li>Pije: Ujë, lëng, verë, pije speciale dhe koktejle</li>
+                </ul>
+              </div>
+              <a href="contact.html" class="btn-gold reserve-btn">Rezervo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICE CALCULATOR ========== -->
+    <section class="calculator-section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-4">Kalkulator Çmimi për Dasmë</h2>
+        <form id="priceCalculator" class="row g-3 justify-content-center">
+          <div class="col-md-3">
+            <label for="guests" class="form-label">Numri i mysafirëve</label>
+            <input type="number" id="guests" class="form-control" min="1" value="50" />
+          </div>
+
+          <div class="col-md-3">
+            <label for="package" class="form-label">Zgjidh Paketën</label>
+            <select id="package" class="form-select">
+              <option value="15">Paketa 1 (15€/person)</option>
+              <option value="20">Paketa 2 (20€/person)</option>
+              <option value="30">Paketa 3 (30€/person)</option>
+              <option value="0">Përzgjidh opsionet më vonë</option>
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label class="form-label">Opsione Shtesë</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="liveMusic" value="300" />
+              <label class="form-check-label" for="liveMusic">Muzikë Live (+300€)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="premiumDecor" value="500" />
+              <label class="form-check-label" for="premiumDecor">Dekor Premium (+500€)</label>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="discountCode" class="form-label">Kodi i Zbritjes</label>
+            <input type="text" id="discountCode" class="form-control" placeholder="Shkruaj kodin" />
+          </div>
+
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-gold mt-3" onclick="calculatePrice()">
+              Llogarit Çmimin
+            </button>
+          </div>
+        </form>
+
+        <div class="text-center mt-4">
+          <h3>Çmimi Totali: <span id="totalPrice">0€</span></h3>
+          <p class="calculator-note">
+            * Çmimi është orientues. Për një ofertë zyrtare dhe të personalizuar, na kontaktoni.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function calculatePrice() {
+        let guests = parseInt(document.getElementById("guests").value);
+        let perPerson = parseInt(document.getElementById("package").value);
+
+        let total = guests * perPerson;
+
+        if (document.getElementById("liveMusic").checked)
+          total += parseInt(document.getElementById("liveMusic").value);
+        if (document.getElementById("premiumDecor").checked)
+          total += parseInt(document.getElementById("premiumDecor").value);
+
+        const code = document.getElementById("discountCode").value.trim().toUpperCase();
+        let discount = 0;
+
+        if (code.startsWith("DISC")) {
+          let percent = parseInt(code.substring(4));
+          if (!isNaN(percent) && percent >= 1 && percent <= 25) {
+            discount = percent / 100;
+          }
+        }
+
+        if (discount > 0) {
+          total = total - total * discount;
+        }
+
+        document.getElementById("totalPrice").innerText = total.toFixed(2) + "€";
+      }
+
+      function toggleMenu(id) {
+        const menu = document.getElementById(id);
+        if (!menu) return;
+        if (menu.style.display === "none" || menu.style.display === "") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: #000 !important;
+        color: #d4af37 !important;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      span,
+      label {
+        color: #d4af37 !important;
+      }
+
+      .btn-gold {
+        display: inline-block;
+        background-color: #d4af37 !important;
+        color: #000 !important;
+        padding: 0.9rem 2.5rem;
+        border-radius: 50px;
+        border: 2px solid #d4af37;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+
+      .btn-gold:hover {
+        background-color: transparent !important;
+        color: #d4af37 !important;
+      }
+
+      .btn-outline-gold {
+        display: inline-block;
+        border: 2px solid #d4af37;
+        color: #d4af37;
+        background-color: transparent;
+        font-weight: 600;
+        border-radius: 50px;
+        padding: 0.7rem 1.6rem;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
+
+      .btn-outline-gold:hover {
+        background-color: #d4af37;
+        color: #000;
+      }
+
+      /* HERO */
+      .packages-hero {
+        position: relative;
+        padding: 120px 0 80px;
+        background: url("assets/images/grand.jpg") center/cover no-repeat;
+      }
+
+      .packages-hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.9)
+        );
+      }
+
+      .packages-hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+      }
+
+      .packages-hero .badge-text {
+        display: inline-block;
+        padding: 0.3rem 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(212, 175, 55, 0.6);
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .packages-hero h1 {
+        font-size: 2.6rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+
+      .packages-hero .subtitle {
+        font-size: 1.05rem;
+        max-width: 650px;
+      }
+
+      /* PACKAGES GRID */
+      .packages-section {
+        padding: 80px 0 60px;
+        background: #050505;
+      }
+
+      .packages-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+      }
+
+      .package-card {
+        background: #141414;
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.4);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+
+      .package-card.highlight {
+        border-color: #d4af37;
+        transform: translateY(-5px);
+      }
+
+      .package-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 30px 70px rgba(212, 175, 55, 0.25);
+        border-color: #d4af37;
+      }
+
+      .package-badge {
+        position: absolute;
+        z-index: 3;
+        top: 18px;
+        right: 18px;
+        padding: 0.3rem 0.9rem;
+        border-radius: 999px;
+        background: #d4af37;
+        color: #000;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+
+      .package-img {
+        position: relative;
+        height: 210px;
+        overflow: hidden;
+      }
+
+      .package-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .package-card:hover .package-img img {
+        transform: scale(1.08);
+      }
+
+      .package-content {
+        padding: 1.8rem 1.6rem 1.9rem;
+        flex: 1;
+      }
+
+      .package-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .package-price {
+        margin-bottom: 0.6rem;
+        font-size: 0.95rem;
+      }
+
+      .package-price span {
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+
+      .package-tagline {
+        font-size: 0.95rem;
+        margin-bottom: 1.1rem;
+      }
+
+      .reserve-btn {
+        display: block;
+        width: fit-content;
+        margin: 0.9rem auto 0;
+        text-decoration: none !important;
+      }
+
+      .reserve-btn:hover,
+      .reserve-btn:focus {
+        text-decoration: none !important;
+      }
+
+      .package-menu {
+        display: none;
+        border-radius: 14px;
+        padding: 14px 14px 10px;
+        margin-top: 8px;
+        background-color: #000;
+        border: 1px solid rgba(212, 175, 55, 0.5);
+      }
+
+      .package-menu ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0;
+      }
+
+      .package-menu ul li {
+        margin-bottom: 6px;
+        font-size: 0.92rem;
+        color: #f4e9c7 !important;
+      }
+
+      /* CALCULATOR */
+      .calculator-section {
+        padding: 70px 0 80px;
+        background: #0b0b0b;
+      }
+
+      #priceCalculator input,
+      #priceCalculator select {
+        border-radius: 15px !important;
+        border: 1.5px solid #d4af37;
+        padding: 10px;
+        background: #111;
+        color: #d4af37;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      #priceCalculator input:focus,
+      #priceCalculator select:focus {
+        border-color: #b9972f;
+        box-shadow: 0 0 5px rgba(217, 175, 55, 0.5);
+        outline: none;
+      }
+
+      #priceCalculator label {
+        font-weight: 600;
+      }
+
+      #totalPrice {
+        font-weight: 700;
+        color: #d4af37;
+        font-size: 1.5rem;
+      }
+
+      .calculator-note {
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+      }
+
+      /* FOOTER DARK */
+      .bg-light {
+        background-color: #000 !important;
+      }
+
+      .text-dark {
+        color: #d4af37 !important;
+      }
+
+      footer {
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+      }
+
+      footer p,
+      footer a {
+        color: #d4af37 !important;
+      }
+
+      footer a:hover {
+        color: #b8962e !important;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 991px) {
+        .packages-hero {
+          padding-top: 110px;
+          padding-bottom: 70px;
+        }
+
+        .packages-hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .packages-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        .packages-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .package-img {
+          height: 190px;
+        }
+
+        .packages-section {
+          padding: 60px 0 50px;
+        }
+      }
+    </style>
+
+    <footer class="bg-light text-dark pt-5 mt-5">
+      <div class="container text-center">
+        <p>
+          © <span id="footerYear"></span> Hotel Grand Kosova, Rogov e Hasit, Gjakovë. Të gjitha të
+          drejtat e rezervuara.
+        </p>
+        <p>
+          <a href="https://www.instagram.com/grandkosova" target="_blank" rel="noreferrer"
+            >Instagram</a
+          >
+          |
+          <a href="https://api.whatsapp.com/send?phone=38349619090" target="_blank" rel="noreferrer">WhatsApp</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      const footerYear = document.getElementById("footerYear");
+      if (footerYear) footerYear.textContent = String(new Date().getFullYear());
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.AOS) {
+          AOS.init({
+            duration: 900,
+            once: true,
+            offset: 80,
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
